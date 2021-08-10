@@ -50,8 +50,7 @@ p {
     width: 7.5rem;
     padding: 8px;
     cursor: pointer;
-    position: fixed;
-    bottom: 10px;
+    position: relative;
 }
 
 .sedans .click {
