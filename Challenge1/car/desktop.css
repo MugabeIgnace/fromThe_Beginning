@@ -1,0 +1,22 @@
+/*  desktop changes */
+
+@media (min-width: 846px) {
+    .content {
+        display: flex;
+        padding: 80px 140px 80px 140px;
+        margin: 85px 50px 85px 50px;
+    }
+    .sedans {
+        border-radius: 10px 0 0 10px;
+    }
+    .luxury {
+        border-radius: 0 10px 10px 0;
+    }
+    .column {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .column p {
+        margin-bottom: 5rem;
+    }
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Lexand Deca' sans-serif;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+.content {
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(148, 148, 148, 0.2), 0 6px 20px 0 rgba(124, 124, 124, 0.19);
+}
+
+.column {
+    padding: 2.3rem;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+.definition p {
+    color: hsla(0, 20%, 95%, 0.75);
+}
+
+
+/* buttons */
+
+.click {
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 2rem;
+    width: 7.5rem;
+    padding: 8px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+}
+
+.sedans .click {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+}
+
+.sedans .click:hover {
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs .click {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+}
+
+.suvs .click:hover {
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury .click {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury .click:hover {
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(179, 100%, 13%);
+}
