@@ -1,6 +1,6 @@
 # 🚕🚓 🚖 preview card component
 
-![Design preview for the cars preview card component coding challenge](./design/desktop-preview.jpg)
+![Design preview for the cars preview card component coding challenge](./car/design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
