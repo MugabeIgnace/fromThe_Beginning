@@ -44,6 +44,7 @@ p {
 /* buttons */
 
 .click {
+    font-family: 'Lexend Deca', sans-serif;
     background-color: hsl(0, 0%, 95%);
     border: 2px solid hsl(0, 0%, 95%);
     border-radius: 2rem;
