@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap');
 html {
-    font-size: 13px;
+    font-size: 20px;
     font-family: 'Libre Franklin', sans-serif;
     color: hsl(209, 33%, 12%);
 }
@@ -30,7 +30,7 @@ main {
     max-width: calc(840px - 3rem);
 }
 
-main>image {
+main>img {
     display: block;
     width: 100%;
 }
@@ -60,6 +60,7 @@ form>button {
     font-weight: 600;
     color: #fff;
     box-shadow: 0 0.5rem 1rem -1rem hsl(223, 87%, 63%);
+    transform: translateY(0);
 }
 
 form>button:hover {
@@ -86,10 +87,12 @@ footer {
     border-radius: 50%;
     color: hsl(223, 87%, 63%);
     font-size: 1.1em;
+    transition: color 0.3s ease-in-out;
 }
 
 .container::before,
 .container::after {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -97,6 +100,7 @@ footer {
     height: 100%;
     border-radius: 50%;
     z-index: -1;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .container::before {
