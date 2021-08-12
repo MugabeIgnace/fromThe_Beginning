@@ -47,17 +47,17 @@
 <body>
 
     <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="logo">
 
-        <img src="images/logo.svg" alt="logo">
-
-
+        </div>
     </header>
 
-    <article class="notify">
-        <h1>We are launching soon!</h1>
-        <h4>subscribe and get notified</h4>
-        <section class="form">
+    <main>
 
+        <section>
+            <h1>We are launching <span>soon!</span></h1>
+            <h4>subscribe and get notified</h4>
             <form action="get">
                 <input type="text" placeholder="Your email address..." required>
                 <button>Notify Me</button>
@@ -66,14 +66,23 @@
         <section class="dashboard">
             <img src="images/illustration-dashboard.png" alt="dashboard">
         </section>
-    </article>
+    </main>
 
     <footer>
-
-        <ion-icon name="logo-facebook"></ion-icon>
-        <ion-icon name="logo-twitter"></ion-icon>
-        <ion-icon name="logo-instagram"></ion-icon>
-
+        <div>
+            <a href="https://facebook.com" target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="https://instagram.com/ " target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+        </div>
+        <div class="copyright">
+            &copy; Copyright Ping. All rights reserved.
+        </div>
     </footer>
 
 

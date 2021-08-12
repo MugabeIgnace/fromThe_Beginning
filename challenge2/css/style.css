@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
 * {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Libre Franklin', sans-serif;
 }
 
@@ -8,26 +15,84 @@ header {
     justify-content: center;
 }
 
-.notify {
-    display: flex;
-    flex-direction: column;
-}
-
-.form,
-h1,
-h4 {
+.logo {
+    margin-top: 2.35rem;
+    width: 100%;
     display: flex;
     justify-content: center;
+    padding: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 700;
+    color: hsl(0, 0%, 59%);
+}
+
+h1>span {
+    color: hsl(209, 33%, 12%);
+}
+
+h4 {
+    padding: 15px;
+    color: hsl(209, 33%, 12%);
+}
+
+form {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+form>input,
+form>button {
+    padding: 20px;
+}
+
+form>input {
+    width: 26rem;
+    margin: 10px;
+    border: 1px solid hsl(223, 100%, 88%);
+    color: #a0a0a071;
+}
+
+form>input::placeholder {
+    color: #a0a0a071;
+}
+
+form>button {
+    background-color: #4d7bf3;
+    width: 200px;
+    box-shadow: 0 3px 6px #4d7cf37c;
+    color: white;
+}
+
+form>button:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 10px #4d7cf37c;
 }
 
 .dashboard {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    margin: 20px;
+    width: 39.5rem;
+}
+
+.dashboard img {
+    width: 100%;
 }
 
 footer {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+a {
+    cursor: pointer;
 }
