@@ -47,7 +47,8 @@ form {
 }
 
 form>input::placeholder {
-    color: #a0a0a071;
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
 }
 
 footer {
@@ -58,6 +59,10 @@ footer {
 
 a {
     cursor: pointer;
+}
+
+.copyright {
+    font-weight: 300;
 }
 
 @media(min-width:768px) {
@@ -76,6 +81,7 @@ a {
         border-radius: 50px;
         box-shadow: 0 3px 6px #4d7cf37c;
         color: white;
+        cursor: pointer;
     }
     .dashboard {
         margin: 30px;
@@ -104,6 +110,7 @@ a {
         box-shadow: 0 3px 6px #4d7cf37c;
         color: white;
         justify-self: center;
+        cursor: pointer;
     }
     .dashboard {
         margin: 30px;
