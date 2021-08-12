@@ -26,6 +26,7 @@ main {
 h1 {
     font-weight: 700;
     color: hsl(0, 0%, 59%);
+    text-align: center;
 }
 
 h1>span {
@@ -35,6 +36,7 @@ h1>span {
 h4 {
     padding: 15px;
     color: hsl(209, 33%, 12%);
+    text-align: center;
 }
 
 form {
@@ -61,12 +63,14 @@ a {
     form>input {
         width: 26rem;
         margin: 10px;
+        border-radius: 50px;
         border: 1px solid hsl(223, 100%, 88%);
         color: #a0a0a071;
     }
     form>button {
         background-color: #4d7bf3;
         width: 200px;
+        border-radius: 50px;
         box-shadow: 0 3px 6px #4d7cf37c;
         color: white;
     }
@@ -83,6 +87,7 @@ a {
     form>input {
         width: 80%;
         margin: 10px;
+        border-radius: 50px;
         border: 1px solid hsl(223, 100%, 88%);
         color: #a0a0a071;
         justify-self: center;
@@ -90,6 +95,7 @@ a {
     form>button {
         background-color: #4d7bf3;
         width: 80%;
+        border-radius: 50px;
         box-shadow: 0 3px 6px #4d7cf37c;
         color: white;
         justify-self: center;
