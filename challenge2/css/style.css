@@ -2,3 +2,32 @@
 * {
     font-family: 'Libre Franklin', sans-serif;
 }
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.notify {
+    display: flex;
+    flex-direction: column;
+}
+
+.form,
+h1,
+h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
