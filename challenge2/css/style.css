@@ -1,11 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Libre Franklin', sans-serif;
 }
@@ -50,41 +43,8 @@ form {
     margin-bottom: 20px;
 }
 
-form>input,
-form>button {
-    padding: 20px;
-}
-
-form>input {
-    width: 26rem;
-    margin: 10px;
-    border: 1px solid hsl(223, 100%, 88%);
-    color: #a0a0a071;
-}
-
 form>input::placeholder {
     color: #a0a0a071;
-}
-
-form>button {
-    background-color: #4d7bf3;
-    width: 200px;
-    box-shadow: 0 3px 6px #4d7cf37c;
-    color: white;
-}
-
-form>button:hover {
-    cursor: pointer;
-    box-shadow: 0 3px 10px #4d7cf37c;
-}
-
-.dashboard {
-    margin: 20px;
-    width: 39.5rem;
-}
-
-.dashboard img {
-    width: 100%;
 }
 
 footer {
@@ -95,4 +55,50 @@ footer {
 
 a {
     cursor: pointer;
+}
+
+@media(min-width:768px) {
+    form>input {
+        width: 26rem;
+        margin: 10px;
+        border: 1px solid hsl(223, 100%, 88%);
+        color: #a0a0a071;
+    }
+    form>button {
+        background-color: #4d7bf3;
+        width: 200px;
+        box-shadow: 0 3px 6px #4d7cf37c;
+        color: white;
+    }
+    .dashboard {
+        margin: 30px;
+        width: 85%;
+    }
+    .dashboard img {
+        width: 100%;
+    }
+}
+
+@media (max-width:767px) {
+    form>input {
+        width: 80%;
+        margin: 10px;
+        border: 1px solid hsl(223, 100%, 88%);
+        color: #a0a0a071;
+        justify-self: center;
+    }
+    form>button {
+        background-color: #4d7bf3;
+        width: 80%;
+        box-shadow: 0 3px 6px #4d7cf37c;
+        color: white;
+        justify-self: center;
+    }
+    .dashboard {
+        margin: 30px;
+        width: 85%;
+    }
+    .dashboard img {
+        width: 100%;
+    }
 }
