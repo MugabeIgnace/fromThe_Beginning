@@ -1,5 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
+* {}
+
+header {}
+
+.logo {}
+
+main {}
+
+article {}
+
+h1 {}
+
+h4 {}
+
+form {}
+
+form>input {}
+
+form>button {}
+
+form>button:hover {}
+
+.dashboard {}
+
+img {}
+
+footer {}
+
+.connect {}
+
+.connect>a {}
+
+.copyright {}
+
+
+/*
+
+
 body {
     font-family: 'Libre Franklin', sans-serif;
 }
@@ -61,7 +97,7 @@ form>input::placeholder {
 }
 
 form>button {
-    box-shadow: 0.01px 0.01px 0.01px 0.01px hsl(223, 100%, 71%);
+    box-shadow: 0px 0px 0.01px 0px hsl(223, 100%, 71%);
     background-color: hsl(223, 87%, 63%);
     color: white;
     justify-self: center;
@@ -135,13 +171,13 @@ a {
 @media (max-width:767px) {
     form>input {
         width: 100%;
-        height: 30px;
+        height: 35px;
         margin-bottom: 10px;
         justify-self: center;
     }
     form>button {
         width: 100%;
-        height: 35px;
+        height: 38px;
     }
     .dashboard {
         margin: 30px;
