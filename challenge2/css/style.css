@@ -51,6 +51,7 @@ form>input {
 }
 
 form>button {
+    cursor: pointer;
     border-radius: 50px;
     height: 30px;
     text-align: center;
