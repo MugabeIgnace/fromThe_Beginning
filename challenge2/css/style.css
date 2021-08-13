@@ -1,42 +1,5 @@
-* {}
-
-header {}
-
-.logo {}
-
-main {}
-
-article {}
-
-h1 {}
-
-h4 {}
-
-form {}
-
-form>input {}
-
-form>button {}
-
-form>button:hover {}
-
-.dashboard {}
-
-img {}
-
-footer {}
-
-.connect {}
-
-.connect>a {}
-
-.copyright {}
-
-
-/*
-
-
-body {
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,600;0,700;1,300&display=swap');
+* {
     font-family: 'Libre Franklin', sans-serif;
 }
 
@@ -45,145 +8,105 @@ header {
     justify-content: center;
 }
 
-.logo {
-    margin-top: 2.35rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-}
+.logo {}
 
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 40px;
 }
 
-h1 {
-    font-weight: 700;
-    color: hsl(0, 0%, 59%);
+article {
     text-align: center;
 }
 
-h1>span {
+h1 {
+    color: hsl(0, 0%, 59%);
+}
+
+span {
     color: hsl(209, 33%, 12%);
 }
 
 h4 {
-    font-weight: 300;
-    padding: 15px;
     color: hsl(209, 33%, 12%);
-    text-align: center;
+    font-weight: 300;
 }
 
 form {
-    position: relative;
-    width: fit-content;
+    margin-bottom: 20px;
     margin-bottom: 20px;
 }
 
 form>input {
-    text-align: center;
-    font-weight: 300;
-    border: 1px solid hsl(223, 100%, 88%);
     border-radius: 50px;
-}
-
-form>input::placeholder {
-    text-align: center;
-    color: hsl(0, 0%, 59%);
-    font-weight: 300;
+    height: 30px;
+    text-align: start;
+    padding-left: 30px;
+    border: 1px solid hsl(223, 100%, 88%);
 }
 
 form>button {
-    box-shadow: 0px 0px 0.01px 0px hsl(223, 100%, 71%);
-    background-color: hsl(223, 87%, 63%);
-    color: white;
-    justify-self: center;
-    cursor: pointer;
     border-radius: 50px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 100%, 88%);
+}
+
+form>button:hover {}
+
+.dashboard {}
+
+img {
+    justify-self: center;
+    width: 90%;
+    height: 100%;
 }
 
 footer {
     display: flex;
     flex-direction: column;
+    align-self: flex-end;
     text-align: center;
 }
 
-a {
-    cursor: pointer;
-}
-
-.copyright {
-    font-weight: 300;
-    color: hsl(0, 0%, 59%);
-}
-
 .connect {
-    display: flex;
-    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .connect>a {
     color: hsl(223, 87%, 63%);
     text-decoration: none;
-    margin: 20px;
-    background: white;
+    background-color: white;
     border-radius: 50%;
-    padding: 2px;
-    border: 0.1px solid white;
-    border-width: 5px;
-    box-shadow: 0.01px 0.01px 0.01px 0.01px hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 100%, 88%);
+    margin: 10px;
+    padding: 5px;
 }
 
 .connect>a:hover {
-    color: white;
-    text-decoration: none;
-    margin: 20px;
-    background: hsl(223, 87%, 63%);
-    border-radius: 50%;
-    padding: 2px;
-    border: 0.1px solid hsl(223, 87%, 63%);
-    border-width: 5px;
-    box-shadow: 0.01px 0.01px 0.01px 0.01px hsl(223, 87%, 63%);
+    color: hsl(223, 100%, 88%);
+    background-color: hsl(223, 87%, 63%);
 }
 
-@media(min-width:768px) {
-    form>input {
-        width: 26rem;
-        margin: 10px;
-        height: 25px;
-    }
-    form>button {
-        width: 200px;
-        height: 30px;
-    }
-    .dashboard {
-        margin: 30px;
-        width: 85%;
-    }
-    .dashboard img {
-        width: 100%;
-    }
+.copyright {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 @media (max-width:767px) {
-    form>input {
-        width: 100%;
-        height: 35px;
-        margin-bottom: 10px;
-        justify-self: center;
+    form {
+        display: flex;
+        flex-direction: column;
     }
     form>button {
-        width: 100%;
-        height: 38px;
-    }
-    .dashboard {
-        margin: 30px;
-        width: 85%;
-    }
-    .dashboard img {
-        width: 100%;
+        margin-top: 10px;
     }
 }
