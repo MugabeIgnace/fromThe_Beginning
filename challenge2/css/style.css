@@ -90,7 +90,7 @@ footer {
     color: hsl(223, 87%, 63%);
     text-decoration: none;
     background-color: white;
-    border-radius: 50%;
+    border-radius: 50px;
     border: 1px solid hsl(223, 100%, 88%);
     margin: 10px;
     padding: 5px;
