@@ -1,3 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;*/
+main > article > h1,
+main > aside > h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+}
+main > article > h3,
+main > article > h5,
+main > aside > h3,
+main > aside > h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: hsl(192, 100%, 9%);
+}
+.foo > h1 {
+  font-family: "Poppins", sans-serif;
+  color: hsl(207, 100%, 98%);
+}
+.foo > h3,
+.foo > h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: hsl(207, 100%, 98%);
+}
+
 button {
   cursor: pointer;
 
@@ -85,9 +115,105 @@ footer {
   background-position: center;
   color: white;
 }
-footer > .logo-for-footer > img {
-  fill: white;
-  margin-top: 30px;
+
+.connect > a {
+  color: white;
+}
+
+address > h5 > img {
+  margin-right: 20px;
+}
+
+.connect {
+  display: flex;
+}
+
+.connect > a > i {
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 900px){
+  .start-free {
+  border-radius: 50px;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+header > div {
+  padding: 20px;
+}
+.img-header {
+  align-self: center;
+}
+.button-header {
+  align-self: center;
+  background-color: white;
+  color: hsl(322, 100%, 66%);
+}
+.img-header > img {
+  height: 20px;
+}
+.button-header > button {
+  border-radius: 50px;
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  color: hsl(322, 100%, 66%);
+  border: 1px solid hsl(322, 100%, 66%);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+}
+.community {
+  display: flex;
+  flex-direction: column;
+}
+.measurement {
+  margin: 60px;
+}
+
+.about-growth {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.for-conversations,
+.users,
+.ready {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+
+footer {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 400px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/bg-footer-top-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  color: white;
 }
 
 .connect > a {
@@ -104,4 +230,5 @@ address > h5 > img {
 
 .connect > a > i {
   margin-right: 20px;
+}
 }
