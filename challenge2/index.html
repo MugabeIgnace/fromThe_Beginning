@@ -41,7 +41,7 @@
     <link rel="icon" href="images/favicon-32x32.png">
     <title>Ping</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/00f2eaf319.js" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -59,10 +59,14 @@
         <article>
             <h1>We are launching <span>soon!</span></h1>
             <h4>subscribe and get notified</h4>
-            <form action="get">
-                <input type="text" placeholder="Your email address..." required>
-                <button>Notify Me</button>
+            <form action="" id="form">
+                <input type="email" name="email"   id="email" placeholder="Your email address..."
+                    onkeydown="validation()">
+                <button type="submit" id="validate"> Notify Me </button><br>
+                <span id="result"></span>
             </form>
+
+
         </article>
 
         <article class="dashboard">
@@ -89,7 +93,8 @@
 
 
 
-
+    <script src="https://kit.fontawesome.com/00f2eaf319.js" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
 
 </body>
 
