@@ -1,52 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
 
-/*
-
-
-
-
-.start-free {
-  border-radius: 50px;
-  background-color: hsl(322, 100%, 66%);
-  color: white;
-  width: 50vw;
-  height: 6vh;
-}
-.Subscribe {
-  padding: 5px;
-  background-color: hsl(322, 100%, 66%);
-  color: white;
-}
-
-
-
-
-
-
-
-
-
-
-
-a {
-  color: white;
-}
-
-img {
-  margin-right: 20px;
-}
-
-.connect {
-  display: flex;
-  justify-content: center;
-}
-
-i {
-  margin-right: 20px;
-}
-*/
-
 body {
   background-color: hsl(207, 100%, 98%);
 }
@@ -54,13 +8,17 @@ button {
   cursor: pointer;
   border-style: none;
 }
-h4 {
+h4,
+h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
-h6 {
+h6,
+address {
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .header {
@@ -100,8 +58,7 @@ h6 {
 main > .main {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  margin: 20px;
+  justify-content: center;
 }
 .community {
   display: flex;
@@ -109,6 +66,13 @@ main > .main {
   text-align: center;
   justify-content: center;
 }
+.community > .img > img {
+  width: 350px;
+  height: 300px;
+  padding: 20px;
+  justify-self: center;
+}
+
 .contain-measurement {
   display: flex;
   flex-direction: row;
@@ -116,8 +80,8 @@ main > .main {
   justify-content: center;
   margin-bottom: 30px;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: bottom;
+  background-size: cover;
+  background-position: center;
   max-width: 100%;
   height: auto;
   background-image: url("images/bg-section-top-mobile-2.svg");
@@ -137,13 +101,18 @@ main > .main {
   margin-bottom: 30px;
 }
 
-#img,
-.content {
+#img {
   width: 150px;
   height: 150px;
-  padding: 20px;
 }
 
+.connect {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  justify-content: flex-start;
+  text-align: left;
+}
 aside > .aside {
   display: flex;
   flex-direction: column;
@@ -154,11 +123,12 @@ aside > .aside {
   flex-direction: row;
   text-align: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: bottom;
+
+  background-size: cover;
+  background-position: center;
   justify-content: center;
   background-image: url("images/bg-section-bottom-mobile-1.svg");
-  margin: 30px;
+  margin-bottom: 30px;
   max-width: 100%;
   height: auto;
 }
@@ -168,7 +138,7 @@ aside > .aside {
   flex-direction: row-reverse;
   text-align: center;
   justify-content: center;
-  margin: 30px;
+  margin-bottom: 30px;
 }
 
 .ready {
@@ -176,10 +146,10 @@ aside > .aside {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  margin: 30px;
+  margin-bottom: 30px;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: bottom;
+  background-size: cover;
+  background-position: center;
   max-width: 100%;
   height: auto;
   background-image: url("images/bg-section-bottom-mobile-2.svg");
@@ -189,17 +159,119 @@ aside > .aside {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
-  text-align: center;
+
   background-image: url("images/bg-footer-top-mobile.svg");
   background-size: cover;
   padding-top: 160px;
-  max-width: 100%;
-  height: auto;
-  border-image-slice: fill;
+
+  object-fit: fill;
+  color: hsl(207, 100%, 98%);
   background-repeat: no-repeat;
   background-position: center;
 }
 
+a {
+  color: hsl(207, 100%, 98%);
+}
+i {
+  margin-right: 20px;
+}
+a > i:hover {
+  color: hsl(210, 97%, 70%);
+}
+
+.foo {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.start-free {
+  border-radius: 50px;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  width: 50vw;
+  height: 6vh;
+}
+.start-free:hover {
+  border-radius: 50px;
+  background-color: hsl(321, 100%, 78%);
+  color: white;
+  width: 50vw;
+  height: 6vh;
+}
+.Subscribe {
+  padding: 5px;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+}
+.Subscribe:hover {
+  padding: 5px;
+  background-color: hsl(321, 100%, 78%);
+  color: white;
+}
+
+.for {
+  display: flex;
+  flex-flow: nowrap;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 80px;
+}
+.for > input {
+  border-radius: 3px;
+  border-style: none;
+  flex-shrink: 1;
+  height: 20px;
+  width: 130px;
+  margin-right: 5px;
+}
+.for > button {
+  border-radius: 3px;
+  border-style: none;
+  flex-shrink: 4;
+  margin-right: 10px;
+}
+
+.content {
+  width: 250px;
+  height: 150px;
+
+  padding-right: 10vw;
+}
+.contents {
+  width: 250px;
+  height: 150px;
+  padding-left: 10vw;
+}
+.content,
+address {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.content-footer {
+  width: 30vw;
+  padding-right: 10vw;
+  justify-self: flex-start;
+}
+.contents-footer {
+  width: 30vw;
+
+  justify-self: flex-end;
+}
+
+.footer > .foo > .content-footer > .logo-for-footer {
+  padding-bottom: 10px;
+}
+.logo-for-footer > img {
+  filter: invert(150%);
+  width: 130px;
+}
+.make-it-small {
+  width: 10px;
+  padding-right: 5px;
+}
 @media screen and (min-width: 900px) {
   body {
     display: flex;
@@ -208,75 +280,9 @@ aside > .aside {
     height: 100vh;
     background-color: hsl(207, 100%, 98%);
   }
-  .header {
-    display: flex;
-
-    background-position: top;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
+  .community > .img > img {
+    width: 400px;
+    height: 300px;
+    justify-self: center;
   }
-
-  .header > div {
-    padding: 20px;
-  }
-  .img-header {
-    align-self: center;
-  }
-  #button-header {
-    align-self: center;
-    background-color: white;
-    color: hsl(322, 100%, 66%);
-  }
-  .img-header > img {
-    height: 20px;
-  }
-  #button-header > button {
-    border-radius: 50px;
-    width: 100px;
-    height: 30px;
-    background-color: white;
-    color: hsl(322, 100%, 66%);
-    border: 1px solid hsl(322, 100%, 66%);
-  }
-
-  .main {
-    margin-top: 30px;
-    display: flex;
-    margin-right: 0;
-    flex-direction: column;
-    padding-left: 10px;
-    margin-left: 20px;
-    border: 2px solid white;
-  }
-
-  .aside {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-    margin-left: 0;
-    border: 2px solid white;
-  }
-
-  .footer {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 300px;
-    padding-bottom: 40px;
-    display: flex;
-    flex-direction: row-reverse;
-    max-width: 100%;
-    background-image: url("images/bg-footer-top-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: bottom;
-    background-position: center;
-    color: white;
-  }
-}
-.in_footer {
-  margin: 20px;
 }
