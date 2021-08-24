@@ -1,166 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
 
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif;*/
-main > article > h1,
-main > aside > h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  color: hsl(192, 100%, 9%);
-}
-main > article > h3,
-main > article > h5,
-main > aside > h3,
-main > aside > h5 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  color: hsl(192, 100%, 9%);
-}
-.foo > h1 {
-  font-family: "Poppins", sans-serif;
-  color: hsl(207, 100%, 98%);
-}
-.foo > h3,
-.foo > h5 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  color: hsl(207, 100%, 98%);
-}
+/*
 
-button {
-  cursor: pointer;
 
-  border-style: none;
-}
+
+
 .start-free {
   border-radius: 50px;
   background-color: hsl(322, 100%, 66%);
   color: white;
+  width: 50vw;
+  height: 6vh;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-header > div {
-  padding: 20px;
-}
-.img-header {
-  align-self: center;
-}
-.button-header {
-  align-self: center;
-  background-color: white;
-  color: hsl(322, 100%, 66%);
-}
-.img-header > img {
-  height: 20px;
-}
-.button-header > button {
-  border-radius: 50px;
-  width: 100px;
-  height: 30px;
-  background-color: white;
-  color: hsl(322, 100%, 66%);
-  border: 1px solid hsl(322, 100%, 66%);
-}
-main {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  margin: 20px;
-}
-.community {
-  display: flex;
-  flex-direction: column;
-}
-.measurement {
-  margin: 60px;
-}
-
-.about-growth {
-  display: flex;
-  flex-direction: column;
-  margin: 40px;
-}
-
-aside {
-  display: flex;
-  flex-direction: column;
-}
-
-.for-conversations,
-.users,
-.ready {
-  display: flex;
-  flex-direction: column;
-  margin: 40px;
-}
-
-footer {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 400px;
-  padding-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  background-image: url("images/bg-footer-top-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-position: center;
-  color: white;
-}
-
-.connect > a {
-  color: white;
-}
-
-address > h5 > img {
-  margin-right: 20px;
-}
-
-.connect {
-  display: flex;
-}
-
-.connect > a > i {
-  margin-right: 20px;
-}
-
-@media screen and (min-width: 900px){
-  .start-free {
-  border-radius: 50px;
+.Subscribe {
+  padding: 5px;
   background-color: hsl(322, 100%, 66%);
   color: white;
 }
-header {
+
+
+
+
+
+
+
+
+
+
+
+a {
+  color: white;
+}
+
+img {
+  margin-right: 20px;
+}
+
+.connect {
   display: flex;
+  justify-content: center;
+}
+
+i {
+  margin-right: 20px;
+}
+*/
+
+body {
+  background-color: hsl(207, 100%, 98%);
+}
+button {
+  cursor: pointer;
+  border-style: none;
+}
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.header {
+  display: flex;
+  background-position: top;
   justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 50px;
   margin-left: 10px;
   margin-right: 10px;
-}
-header > div {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  max-width: 100%;
+  height: auto;
+  background-position: bottom;
   padding: 20px;
+  background-image: url("images/bg-section-top-mobile-1.svg");
 }
+
 .img-header {
   align-self: center;
-}
-.button-header {
-  align-self: center;
-  background-color: white;
-  color: hsl(322, 100%, 66%);
 }
 .img-header > img {
   height: 20px;
 }
-.button-header > button {
+#button-header > button {
+  cursor: pointer;
+  align-self: center;
   border-radius: 50px;
   width: 100px;
   height: 30px;
@@ -168,7 +96,8 @@ header > div {
   color: hsl(322, 100%, 66%);
   border: 1px solid hsl(322, 100%, 66%);
 }
-main {
+
+main > .main {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -177,58 +106,177 @@ main {
 .community {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
-.measurement {
-  margin: 60px;
+.contain-measurement {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+  max-width: 100%;
+  height: auto;
+  background-image: url("images/bg-section-top-mobile-2.svg");
+}
+.measurement1 {
+  margin-right: 20px;
+}
+.measurement2 {
+  margin-left: 20px;
 }
 
 .about-growth {
   display: flex;
-  flex-direction: column;
-  margin: 40px;
+  flex-direction: row-reverse;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
-aside {
+#img,
+.content {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+}
+
+aside > .aside {
   display: flex;
   flex-direction: column;
 }
 
-.for-conversations,
-.users,
+.for-conversations {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+  justify-content: center;
+  background-image: url("images/bg-section-bottom-mobile-1.svg");
+  margin: 30px;
+  max-width: 100%;
+  height: auto;
+}
+
+.users {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  justify-content: center;
+  margin: 30px;
+}
+
 .ready {
   display: flex;
   flex-direction: column;
-  margin: 40px;
-}
-
-footer {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 400px;
-  padding-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  background-image: url("images/bg-footer-top-mobile.svg");
+  text-align: center;
+  justify-content: center;
+  margin: 30px;
   background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-position: center;
-  color: white;
+  background-size: 100% 100%;
+  background-position: bottom;
+  max-width: 100%;
+  height: auto;
+  background-image: url("images/bg-section-bottom-mobile-2.svg");
 }
 
-.connect > a {
-  color: white;
-}
-
-address > h5 > img {
-  margin-right: 20px;
-}
-
-.connect {
+.footer {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  text-align: center;
+  background-image: url("images/bg-footer-top-mobile.svg");
+  background-size: cover;
+  padding-top: 160px;
+  max-width: 100%;
+  height: auto;
+  border-image-slice: fill;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.connect > a > i {
-  margin-right: 20px;
+@media screen and (min-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(207, 100%, 98%);
+  }
+  .header {
+    display: flex;
+
+    background-position: top;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .header > div {
+    padding: 20px;
+  }
+  .img-header {
+    align-self: center;
+  }
+  #button-header {
+    align-self: center;
+    background-color: white;
+    color: hsl(322, 100%, 66%);
+  }
+  .img-header > img {
+    height: 20px;
+  }
+  #button-header > button {
+    border-radius: 50px;
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+  }
+
+  .main {
+    margin-top: 30px;
+    display: flex;
+    margin-right: 0;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-left: 20px;
+    border: 2px solid white;
+  }
+
+  .aside {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 0;
+    border: 2px solid white;
+  }
+
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 300px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    background-image: url("images/bg-footer-top-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+    background-position: center;
+    color: white;
+  }
 }
+.in_footer {
+  margin: 20px;
 }
