@@ -69,9 +69,9 @@ address {
     justify-content: center;
   }
   .community > .img > img {
-    width: 350px;
-    height: 300px;
-    padding: 20px;
+    width: 60vw;
+    height: 50vh;
+    padding: 5vmin;
     justify-self: center;
   }
   .contain-measurement {
@@ -319,9 +319,9 @@ address {
     justify-content: center;
   }
   .community > .img > img {
-    width: 350px;
-    height: 300px;
-    padding: 20px;
+    width: 52vw;
+    height: 50vh;
+    padding: 5vmin;
     justify-self: center;
   }
 
@@ -339,10 +339,10 @@ address {
     background-image: url("images/bg-section-top-desktop-2.svg");
   }
   .measurement1 {
-    margin-right: 20px;
+    margin-right: 10vw;
   }
   .measurement2 {
-    margin-left: 20px;
+    margin-left: 10vw;
   }
 
   .about-growth {
