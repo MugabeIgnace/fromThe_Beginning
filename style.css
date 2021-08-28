@@ -370,7 +370,7 @@ section .title::after{
 .skills-content .right .js::before{
     width: 60%;
 }
-.skills-content .right .Python::before{
+.skills-content .right .python::before{
     width: 50%;
 }
 .skills-content .right .mysql::before{
