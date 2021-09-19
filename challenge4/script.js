@@ -1,10 +1,10 @@
 
-function getItems(){
+function getItems() {
     db.collection("todo-items").onSnapshot((snapshot) => {
         let items = [];
         snapshot.docs.forEach((doc) => {
             items.push({
-                id: doc.id, 
+                id: doc.id,
                 ...doc.data()
             })
         })
@@ -12,7 +12,7 @@ function getItems(){
     })
 }
 
-function generateItems(items){
+function generateItems(items) {
     let todoItems = []
     items.forEach((item) => {
         let todoItem = document.createElement("div");
@@ -22,7 +22,7 @@ function generateItems(items){
         let checkMark = document.createElement("div");
         checkMark.classList.add("check-mark");
         checkMark.innerHTML = '<img src="assets/icon-check.svg">';
-        checkMark.addEventListener("click", function(){
+        checkMark.addEventListener("click", function () {
             markCompleted(item.id);
         })
         checkContainer.appendChild(checkMark);
@@ -31,7 +31,7 @@ function generateItems(items){
         todoText.classList.add("todo-text");
         todoText.innerText = item.text;
 
-        if(item.status == "completed"){
+        if (item.status == "completed") {
             checkMark.classList.add("checked");
             todoText.classList.add("checked");
         }
@@ -44,7 +44,7 @@ function generateItems(items){
 
 
 
-function addItem(event){
+function addItem(event) {
     event.preventDefault();
     let text = document.getElementById("todo-input");
     let newItem = db.collection("todo-items").add({
@@ -54,11 +54,11 @@ function addItem(event){
     text.value = "";
 }
 
-function markCompleted(id){
+function markCompleted(id) {
     let item = db.collection("todo-items").doc(id);
-    item.get().then(function(doc) {
+    item.get().then(function (doc) {
         if (doc.exists) {
-            if(doc.data().status == "active"){
+            if (doc.data().status == "active") {
                 item.update({
                     status: "completed"
                 })
