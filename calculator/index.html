@@ -9,17 +9,13 @@
 </head>
 
 <body>
+
     <form class="calculator">
         <input type="text" placeholder="0" name="displayResult" class="area" />
-        <input type="button" name="" class="btn btn-ac" value="AC" onclick="displayResult.value=' '">
-        <input type="button" name="" value="+/-" onclick="makeNegative(displayResult.value)"
-            class="btn btn-plusorminus">
-        <input type="button" name="" value="%" onclick="calcNumbers(this.value)" class="btn btn-percent">
-        <input type="button" name="" value="/" onclick="calcNumbers(this.value)" class="btn btn-divide">
         <input type="button" name="" value="7" onclick="calcNumbers(this.value)" class="btn btn-7">
         <input type="button" name="" value="8" onclick="calcNumbers(this.value)" class="btn btn-8">
         <input type="button" name="" value="9" onclick="calcNumbers(this.value)" class="btn btn-9">
-        <input type="button" name="" value="*" onclick="calcNumbers(this.value)" class="btn btn-multiply">
+        <input type="button" name="" value="+" onclick="calcNumbers(this.value)" class="btn btn-plus">
         <input type="button" name="" value="4" onclick="calcNumbers(this.value)" class="btn btn-4">
         <input type="button" name="" value="5" onclick="calcNumbers(this.value)" class="btn btn-5">
         <input type="button" name="" value="6" onclick="calcNumbers(this.value)" class="btn btn-6">
@@ -27,14 +23,17 @@
         <input type="button" name="" value="1" onclick="calcNumbers(this.value)" class="btn btn-1">
         <input type="button" name="" value="2" onclick="calcNumbers(this.value)" class="btn btn-2">
         <input type="button" name="" value="3" onclick="calcNumbers(this.value)" class="btn btn-3">
-        <input type="button" name="" value="+" onclick="calcNumbers(this.value)" class="btn btn-plus">
+        <input type="button" name="" value="*" onclick="calcNumbers(this.value)" class="btn btn-multiply">
+
         <input type="button" name="" value="0" onclick="calcNumbers(this.value)" class="btn btn-zero">
         <input type="button" name="" value="." onclick="calcNumbers(this.value)" class="btn btn-dot">
+        <input type="button" name="" value="/" onclick="calcNumbers(this.value)" class="btn btn-divide">
         <input type="button" name="" value="="
             onclick="(displayResult.value.includes('%'))?percentage(displayResult.value):displayResult.value=eval(displayResult.value);"
             class="btn btn-equal">
     </form>
-   <script src="./script/index.js"></script>
+
+    <script src="./script/index.js"></script>
 </body>
 
 </html>
