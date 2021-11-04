@@ -1,0 +1,74 @@
+
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background: #928690;
+    box-shadow: -0.316666666666667vw -0.316666666666667vw 0.95vw #501d37, 0.316666666666667vw 0.316666666666667vw 0.633333333333333vw #411f2f;
+}
+.calculator{
+    width: 63vmin;
+    padding: 7vmin;
+    display: grid;
+    grid-template-columns: repeat(4, 10vmin);    
+    grid-template-rows: repeat(6, 10vmin);
+    grid-gap: 3vmin;
+    font-size: 3vmin;
+    background: #a7a5a4;
+    box-shadow: -0.316666666666667vw -0.316666666666667vw 0.95vw #342335, 0.316666666666667vw 0.316666666666667vw 0.633333333333333vw #402344;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.area{
+    border: none;
+    background: #f7ff89;
+    box-shadow:inset -0.316666666666667vw -0.316666666666667vw 0.95vw #303030,inset 0.316666666666667vw 0.316666666666667vw 0.633333333333333vw #fbfcfa;
+    border-radius: 5px;
+    grid-column: 1 / 5;
+    font-size: 3vmin;
+    text-align: end;
+    padding: 3.5vmin;
+    color: #000000;
+}
+.btn{   
+    font-size: 3vmin;
+    color: #000000;
+    border: none;
+    background: #888585;
+    box-shadow: -0.316666666666667vw -0.316666666666667vw 0.95vw #3e3f3e, 0.316666666666667vw 0.316666666666667vw 0.633333333333333vw #0459d84f;
+    border-radius: 5px;
+    transition: all 100ms cubic-bezier(0.09, 0.32, 0.34, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.btn:hover{
+    box-shadow:inset -0.316666666666667vw -0.316666666666667vw 0.95vw #3d444e,inset 0.316666666666667vw 0.316666666666667vw 0.633333333333333vw #3d444e;
+    color: rgb(193, 223, 28);
+  text-shadow: 0 0 10px #f7f9fa, 0 0 15px #f7f9fa, 0 0 20px #f7f9fa;
+
+
+}
+.btn:focus{
+    background: #1412833f;
+    box-shadow:inset -0.316666666666667vw -0.316666666666667vw 0.95vw #f3f5f8,inset 0.316666666666667vw 0.316666666666667vw 0.633333333333333vw #c2ccdb;
+  outline: none;    
+}
+.btn-ac{
+    background-color: #f30909e5;
+    color: rgb(255, 255, 255);
+    box-shadow: -0.316666666666667vw -0.316666666666667vw 0.95vw #c3c3db, 0.316666666666667vw 0.316666666666667vw 0.633333333333333vw #c8dbff;
+}
+.btn-zero{
+    grid-column: 1 / 3;
+}
