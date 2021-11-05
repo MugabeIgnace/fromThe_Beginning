@@ -1,3 +1,4 @@
+/*
 *,
 *::after,
 *::before {
@@ -5,11 +6,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  background: #928690;
-}
+
 .calculator {
   width: 63vmin;
   padding: 7vmin;
@@ -58,4 +55,75 @@ body {
 .btn-equal {
   background-color: tomato;
   color: rgb(255, 255, 255);
+}
+*/
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background: #928690;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  padding: 2vmin;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+}
+
+  
+
+.area {
+  border: none;
+  height: 20vmin;
+  width: 55vmin;
+  background: tomato;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  font: bold;
+  font-size: 4vmin;
+  text-align: end;
+  color: #000000;
+}
+.div_btn {
+font-size: 3vmin;
+display: grid;
+grid-gap: 3vmin;
+padding: 8px;
+background-color: #ffffff;
+grid-template-columns: repeat(4, 10vmin);
+grid-template-rows: repeat(4, 10vmin);
+}
+
+.btn {
+ background-color: rgba(164, 168, 180,0.3);
+ border-radius: 50%;
+ border: none;
+ font-size: 3vmin;
+}
+
+.btn:hover{
+  background-color: #1412833f;
+}
+.btn:focus{
+  background-color: #1412833f;
+  outline: none;
+}
+.btn-equal{
+  background-color: tomato;
+  color: rgb(255, 255, 255);
+}
+.btn-equal:hover{
+  background-color: rgb(250, 143, 124);
+  color: rgb(0, 0, 0);
+}
+.btn-equal:focus{
+  background-color: rgb(250, 143, 124);
+  color: rgb(0, 0, 0);
+  outline: none;
 }
