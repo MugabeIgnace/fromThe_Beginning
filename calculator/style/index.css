@@ -80,9 +80,10 @@ body {
 
 .area {
   border: none;
+  padding-right: 10px;
   height: 20vmin;
   width: 55vmin;
-  background: tomato;
+  background: rgb(255, 80, 49);
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   font: bold;
@@ -91,10 +92,11 @@ body {
   color: #000000;
 }
 .div_btn {
-font-size: 3vmin;
+font-size: 10vmin;
 display: grid;
 grid-gap: 3vmin;
 padding: 8px;
+padding-left: 16px;
 background-color: #ffffff;
 grid-template-columns: repeat(4, 10vmin);
 grid-template-rows: repeat(4, 10vmin);
@@ -115,7 +117,7 @@ grid-template-rows: repeat(4, 10vmin);
   outline: none;
 }
 .btn-equal{
-  background-color: tomato;
+  background-color: rgb(255, 80, 49);
   color: rgb(255, 255, 255);
 }
 .btn-equal:hover{
